@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fitness center</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/BebasNeueBold.woff" as="font">
+  <link rel="preload" href="fonts/BebasNeueBold.woff2" as="font">
+  <link rel="preload" href="fonts/BebasNeueRegular.woff" as="font">
+  <link rel="preload" href="fonts/BebasNeueRegular.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      <a class="header__logo logo">
+        <svg class="logo__image" width="87" height="20">
+          <title>Логотип</title>
+          <use xlink:href="/img/library.svg#logo-header"></use>
+        </svg>
+      </a>
+      <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
+    </div>
+    <div class="header__wrapper">
+      <h2 class="header__title-info">омск</h2>
+      <h1 class="header__title-main">Фитнес центр</h1>
+      <ul class="header__list">
+        <li class="item">Тренажёрный зал</li>
+        <li class="item">Групповые занятия</li>
+        <li class="item">Кардио-зона</li>
+      </ul>
+      <a class="header__button">Купить абонемент</a>
+
+      <picture class="header__image">
+        <source type="image/webp" media="(max-width: 1024px)"
+          srcset="img/rectangle@x1.webp 1x, img/rectangle@x2.webp 2x">
+        <source type="image/webp" media="(max-width: 768px)"
+          srcset="img/rectangle--tablet@x1.webp 1x, img/rectangle--tablet@x2.webp 2x">
+        <source type="image/webp" media="(max-width: 320px)"
+          srcset="img/rectangle--mobile@x1.webp 1x, img/rectangle--mobile@x2.webp 2x">
+
+        <source media="(max-width: 320px)" srcset="img/rectangle--mobile@x1.jpg 1x, img/rectangle--mobile@x2.jpg 2x">
+        <source media="(max-width: 768px)" srcset="img/rectangle--tablet@x1.jpg 1x, img/rectangle--tablet@x1.jpg 2x">
+        <img src="img/rectangle@x1.jpg" width="500" height="556" alt="Фото тренера" srcset="img/rectangle@x2.jpg 2x">
+      </picture>
+
+      <ul class="header__social header-social">
+        <li class="header-social__item"><a class="header-social__link">Fb</a></li>
+        <li class="header-social__item"><a class="header-social__link">vk</a></li>
+        <li class="header-social__item"><a class="header-social__link">ig</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="main">
+    <div class="main__wrapper">
+      <section class="main__about about">
+
+        <h2 class="about__title">Тренажерный зал</h2>
+        <span class="about__discription">
+          Просторный зал площадью 900 кв/м
+        </span>
+        <p class="about__text">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и
+          здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов. В зале
+          расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько
+          оборудованных залов для различных видов групповых занятий.</p>
+        <picture class="about__video-preview">
+          <source type="image/webp" media="(max-width: 1024px)"
+            srcset="img/video--desktop@x1.webp 1x, img/video--desktop@x2.webp 2x">
+          <source type="image/webp" media="(max-width: 768px)"
+            srcset="img/video--tablet@x1.webp 1x, img/video--tablet@x2.webp 2x">
+          <source type="image/webp" media="(max-width: 320px)"
+            srcset="img/video--mobile@x1.webp 1x, img/video--mobile@x2.webp 2x">
+
+          <source media="(max-width: 320px)" srcset="img/video--mobile@x1.jpg 1x, img/video--mobile@x2.jpg 2x">
+          <source media="(max-width: 768px)" srcset="img/video--tablet@x1.jpg 1x, img/video--tablet@x1.jpg 2x">
+          <img src="img/video--desktop@x1.jpg" width="364" height="228" alt="Превью видео"
+            srcset="img/video--desktop@x2.jpg 2x">
+        </picture>
+      </section>
+      <section class="main__subscription subscription">
+        <h2 class="subscription__title">Абонементы</h2>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
