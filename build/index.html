@@ -77,9 +77,186 @@
           <img src="img/video--desktop@x1.jpg" width="364" height="228" alt="Превью видео" srcset="img/video--desktop@x2.jpg 2x">
         </picture>
       </section>
-      <section class="about__subscription subscription">
+      <section class="main__subscription subscription">
         <h2 class="subscription__title">Абонементы</h2>
-        
+        <ul class="subscription__period-list period-list">
+          <li class="period-list__item"><a class="period-list__link">1 месяц</a></li>
+          <li class="period-list__item"><a class="period-list__link">6 месяцев</a></li>
+          <li class="period-list__item"><a class="period-list__link">12 месяцев</a></li>
+        </ul>
+
+        <ul class="subscription__price-list price-list">
+          <li class="price-list__item">
+            <h3 class="price-list__title">С тренером</h3>
+            <span class="price-list__discription">12 занятий</span>
+            <span class="price-list__coast">5000</span>
+            <a class="price-list__button">купить абонемент</a>
+          </li>
+          <li class="price-list__item">
+            <h3 class="price-list__title">Дневной</h3>
+            <span class="price-list__discription">с 8:00 до 17:00</span>
+            <span class="price-list__coast">1700</span>
+            <a class="price-list__button">купить абонемент</a>
+          </li>
+          <li class="price-list__item">
+            <h3 class="price-list__title">Полный день</h3>
+            <span class="price-list__discription">с 8:00 до 22:00</span>
+            <span class="price-list__coast">2700</span>
+            <a class="price-list__button">купить абонемент</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main__contest contest">
+        <div class="contest__wrapper">
+          <h2 class="contest__title">SUPER GAMES</h2>
+          <span class="contest__discription">Ежегодные соревнования по CrossFit</span>
+          <span class="contest__date-text">Дата</span>
+          <time class="contest__date" datetime="2019-03-7"><span class="contest__date-day">7</span>Марта 2019</time>
+          <span class="contest__time-text">Время</span>
+          <time class="contest__time" datetime="12:00">12:00</time>
+        </div>
+        <a class="contest__button">заполнить заявку</a>
+
+        <picture class="contest__image">
+          <source type="image/webp" media="(max-width: 1024px)" srcset="img/crossfit@x1.webp 1x, img/crossfit@x2.webp 2x">
+          <source type="image/webp" media="(max-width: 768px)" srcset="img/crossfit--tablet@x1.webp 1x, img/crossfit--tablet@x2.webp 2x">
+          <source type="image/webp" media="(max-width: 320px)" srcset="img/crossfit--mobile@x1.webp 1x, img/crossfit--mobile@x2.webp 2x">
+
+          <source media="(max-width: 320px)" srcset="img/crossfit--mobile@x1.jpg 1x, img/crossfit--mobile@x2.jpg 2x">
+          <source media="(max-width: 768px)" srcset="img/crossfit--tablet@x1.jpg 1x, img/crossfit--tablet@x1.jpg 2x">
+          <img src="img/crossfit@x1.jpg" width="660" height="500" alt="Фото спорсмена" srcset="img/crossfit@x2.jpg 2x">
+        </picture>
+      </section>
+
+      <section class="main__coaches coaches">
+        <h2 class="coaches__title">Тренеры</h2>
+        <ul class="coaches__list coaches-list">
+          <li class="coaches__item coaches__item-first">
+            <picture class="coaches__image">
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/coach_1@x1.webp 1x, img/coach_1@x2.webp 2x">
+
+              <img src="img/coach_1@x1.jpg" width="260" height="294" alt="Фото тренера Анны Павловой" srcset="img/coach_1@x2.jpg 2x">
+            </picture>
+            <span class="coaches__name">Анна Павлова</span>
+            <div class="coaches__about"></div>
+          </li>
+          <li class="coaches__item coaches__item-second">
+            <picture class="coaches__image">
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/coach_2@x1.webp 1x, img/coach_2@x2.webp 2x">
+
+              <img src="img/coach_2@x1.jpg" width="260" height="294" alt="Фото тренера Алексея Лаврова" srcset="img/coach_2@x2.jpg 2x">
+            </picture>
+            <span class="coaches__name">Алексей Лавров</span>
+            <div class="coaches__about"></div>
+          </li>
+          <li class="coaches__item coaches__item-third">
+            <picture class="coaches__image">
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/coach_3@x1.webp 1x, img/coach_3@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/coach_3--tablet@x1.webp 1x, img/coach_3--tablet@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 320px)" srcset="img/coach_3--mobile@x1.webp 1x, img/coach_3--mobile@x2.webp 2x">
+
+              <source media="(max-width: 320px)" srcset="img/coach_3--mobile@x1.png 1x, img/coach_3--mobile@x2.png 2x">
+              <source media="(max-width: 768px)" srcset="img/coach_3--tablet@x1.png 1x, img/coach_3--tablet@x1.png 2x">
+              <img src="img/coach_3@x1.png" width="260" height="294" alt="Фото тренера Александрf Пашкова" srcset="img/coach_3@x2.png 2x">
+            </picture>
+            <span class="coaches__name">Александр Пашков</span>
+            <div class="coaches__about">
+              <span class="coaches__about-type">CrossFit</span>
+              <ul class="choaches__about-list about-list">
+                <li class="about-list__item">Certified Level 3 Trainer</li>
+                <li class="about-list__item">Победитель чемпионата России по CrossFit</li>
+                <li class="about-list__item">Опыт — 6 лет</li>
+              </ul>
+            </div>
+          </li>
+          <li class="coaches__item coaches__item-fourth">
+            <picture class="coaches__image">
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/coach_4@x1.webp 1x, img/coach_4@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/coach_4--tablet@x1.webp 1x, img/coach_4--tablet@x2.webp 2x">
+
+              <source media="(max-width: 768px)" srcset="img/coach_4--tablet@x1.jpg 1x, img/coach_4--tablet@x1.jpg 2x">
+              <img src="img/coach_4@x1.jpg" width="260" height="294" alt="Фото тренера Алексея Лаврова" srcset="img/coach_4@x2.jpg 2x">
+            </picture>
+            <span class="coaches__name">Алексей Лавров</span>
+            <div class="coaches__about"></div>
+          </li>
+        </ul>
+      </section>
+      <section class="main__advantages advantages">
+        <h2 class="advantages__title">Наши преимущества</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <picture class="advantages__img">
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/900@x1.webp 1x, img/900@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/900--tablet@x1.webp 1x, img/900--tablet@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 320px)" srcset="img/900--tablet@x1.webp 1x, img/900--tablet@x2.webp 2x">
+
+              <source media="(max-width: 320px)" srcset="img/900--tablet@x1.png 1x, img/900--tablet@x2.png 2x">
+              <source media="(max-width: 768px)" srcset="img/900--tablet@x1.png 1x, img/900--tablet@x1.png 2x">
+              <img src="img/900@x1.png" width="108" height="49" alt="900" srcset="img/900@x2.png 2x">
+            </picture>
+            <span class="advantages__item-type">кв/м</span>
+            <h3 class="advantages__item-title">Площадь</h3>
+            <p class="advantages__item-description">Занимайтесь без очередей и толпучки</p>
+          </li>
+          <li class="advantages__item">
+            <picture class="advantages__img">
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/350@x1.webp 1x, img/350@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/350--tablet@x1.webp 1x, img/350--tablet@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 320px)" srcset="img/350--tablet@x1.webp 1x, img/350--tablet@x2.webp 2x">
+
+              <source media="(max-width: 320px)" srcset="img/350--tablet@x1.png 1x, img/350--tablet@x2.png 2x">
+              <source media="(max-width: 768px)" srcset="img/350--tablet@x1.png 1x, img/350--tablet@x1.png 2x">
+              <img src="img/350@x1.png" width="108" height="49" alt="350" srcset="img/350@x2.png 2x">
+            </picture>
+            <span class="advantages__item-type">мест</span>
+            <h3 class="advantages__item-title">Комфорт</h3>
+            <p class="advantages__item-description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+          </li>
+          <li class="advantages__item">
+            <picture class="advantages__img">
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/5@x1.webp 1x, img/5@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/5--tablet@x1.webp 1x, img/5--tablet@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 320px)" srcset="img/5--tablet@x1.webp 1x, img/5--tablet@x2.webp 2x">
+
+              <source media="(max-width: 320px)" srcset="img/5--tablet@x1.png 1x, img/5--tablet@x2.png 2x">
+              <source media="(max-width: 768px)" srcset="img/5--tablet@x1.png 1x, img/5--tablet@x1.png 2x">
+              <img src="img/5@x1.png" width="70" height="49" alt="5" srcset="img/5@x2.png 2x">
+            </picture>
+            <span class="advantages__item-type">лет</span>
+            <h3 class="advantages__item-title">Тренерский опыт</h3>
+            <p class="advantages__item-description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+          </li>
+          <li class="advantages__item">
+            <picture class="advantages__img">
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/70@x1.webp 1x, img/70@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/70--tablet@x1.webp 1x, img/70--tablet@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 320px)" srcset="img/70--tablet@x1.webp 1x, img/70--tablet@x2.webp 2x">
+
+              <source media="(max-width: 320px)" srcset="img/70--tablet@x1.png 1x, img/70--tablet@x2.png 2x">
+              <source media="(max-width: 768px)" srcset="img/70--tablet@x1.png 1x, img/70--tablet@x1.png 2x">
+              <img src="img/70@x1.png" width="72" height="49" alt="70" srcset="img/70@x2.png 2x">
+            </picture>
+            <span class="advantages__item-type">машин</span>
+            <h3 class="advantages__item-title">Собственная парковка</h3>
+            <p class="advantages__item-description">Вы всегда найдете место для своей машины на нашей парковке</p>
+          </li>
+          <li class="advantages__item">
+            <picture class="advantages__img">
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/5@x1.webp 1x, img/5@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/5--tablet@x1.webp 1x, img/5--tablet@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 320px)" srcset="img/5--tablet@x1.webp 1x, img/5--tablet@x2.webp 2x">
+
+              <source media="(max-width: 320px)" srcset="img/5--tablet@x1.png 1x, img/5--tablet@x2.png 2x">
+              <source media="(max-width: 768px)" srcset="img/5--tablet@x1.png 1x, img/5--tablet@x1.png 2x">
+              <img src="img/5@x1.png" width="70" height="49" alt="5" srcset="img/5@x2.png 2x">
+            </picture>
+            <span class="advantages__item-type">лет</span>
+            <h3 class="advantages__item-title">Тренерский опыт</h3>
+            <p class="advantages__item-description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+          </li>
+        </ul>
       </section>
     </div>
   </main>
