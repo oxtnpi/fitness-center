@@ -19,16 +19,21 @@
 
 <body>
   <header class="header">
-    <div class="header__top">
+    <div class="header__container">
       <a class="header__logo logo">
         <svg class="logo__image" width="87" height="20">
           <title>Логотип</title>
           <use xlink:href="/img/library.svg#logo-header"></use>
         </svg>
       </a>
-      <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
+      <a class="header__phone" href="tel:+78005555555">
+        <svg class="header__phone-image" width="152" height="20">
+        <title>+7-800-555-55-55</title>
+        <use xlink:href="/img/library.svg#phone"></use>
+      </svg></a>
     </div>
     <div class="header__wrapper">
+      <div class="header__info">
       <h2 class="header__title-info">омск</h2>
       <h1 class="header__title-main">Фитнес центр</h1>
       <ul class="header__list">
@@ -37,15 +42,13 @@
         <li class="item">Кардио-зона</li>
       </ul>
       <a class="header__button">Купить абонемент</a>
-
+    </div>
       <picture class="header__image">
         <source type="image/webp" media="(max-width: 1024px)" srcset="img/rectangle@x1.webp 1x, img/rectangle@x2.webp 2x">
         <source type="image/webp" media="(max-width: 768px)" srcset="img/rectangle--tablet@x1.webp 1x, img/rectangle--tablet@x2.webp 2x">
-        <source type="image/webp" media="(max-width: 320px)" srcset="img/rectangle--mobile@x1.webp 1x, img/rectangle--mobile@x2.webp 2x">
 
-        <source media="(max-width: 320px)" srcset="img/rectangle--mobile@x1.jpg 1x, img/rectangle--mobile@x2.jpg 2x">
         <source media="(max-width: 768px)" srcset="img/rectangle--tablet@x1.jpg 1x, img/rectangle--tablet@x1.jpg 2x">
-        <img src="img/rectangle@x1.jpg" width="500" height="556" alt="Фото тренера" srcset="img/rectangle@x2.jpg 2x">
+        <img class="header__img" src="img/rectangle@x1.jpg" alt="Фото тренера" srcset="img/rectangle@x2.jpg 2x">
       </picture>
 
       <ul class="header__social header-social">
@@ -121,7 +124,7 @@
           <h2 class="contest__title">SUPER GAMES</h2>
           <span class="contest__discription">Ежегодные соревнования по CrossFit</span>
           <span class="contest__date-text">Дата</span>
-          <time class="contest__date" datetime="2019-03-7"><span class="contest__date-day">7</span>Марта 2019</time>
+          <p class="contest__date"><span class="contest__date-day">7</span>Марта 2019</p>
           <span class="contest__time-text">Время</span>
           <time class="contest__time" datetime="12:00">12:00</time>
         </div>
@@ -172,7 +175,7 @@
             <span class="coaches__name">Александр Пашков</span>
             <div class="coaches__about">
               <span class="coaches__about-type">CrossFit</span>
-              <ul class="choaches__about-list about-list">
+              <ul class="coaches__about-list about-list">
                 <li class="about-list__item">Certified Level 3 Trainer</li>
                 <li class="about-list__item">Победитель чемпионата России по CrossFit</li>
                 <li class="about-list__item">Опыт — 6 лет</li>
@@ -266,7 +269,7 @@
       <section class="main__feedback feedback">
         <h2 class="feedback__title">Отзывы</h2>
         <div class="feedback__box">
-          <picture class="header__image">
+          <picture class="feedback__image">
             <source type="image/webp" media="(max-width: 1024px)" srcset="img/feedback--desktop@x1.webp 1x, img/feedback--desktop@x2.webp 2x">
             <source type="image/webp" media="(max-width: 768px)" srcset="img/feedback--tablet@x1.webp 1x, img/feedback--tablet@x2.webp 2x">
             <source type="image/webp" media="(max-width: 320px)" srcset="img/feedback--mobile@x1.webp 1x, img/feedback--mobile@x2.webp 2x">
@@ -283,7 +286,7 @@
       <div class="main__container">
         <section class="main__free-lesson free-lesson">
           <h2 class="free-lesson__title">БЕСПЛАТНОЕ занятие</h2>
-          <form lang="free-lesson__form">
+          <form class="free-lesson__form">
             <input class="free-lesson__name" placeholder="Имя">
             <input class="free-lesson__phone" placeholder="Телефон">
             <button class="free-lesson__button">отправить</button>
@@ -368,13 +371,14 @@
             </svg>
           </a>
         </li>
-        <a class="footer-social__link">
-          <svg class="footer-social__image" width="12" height="24">
-            <title>Facebook</title>
-            <use xlink:href="/img/library.svg#fb"></use>
-          </svg>
-        </a>
-        
+        <li class="footer-social__item">
+          <a class="footer-social__link">
+            <svg class="footer-social__image" width="12" height="24">
+              <title>Facebook</title>
+              <use xlink:href="/img/library.svg#fb"></use>
+            </svg>
+          </a>
+        </li>
       </ul>
 
     </div>

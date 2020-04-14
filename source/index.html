@@ -19,16 +19,21 @@
 
 <body>
   <header class="header">
-    <div class="header__top">
+    <div class="header__container">
       <a class="header__logo logo">
         <svg class="logo__image" width="87" height="20">
           <title>Логотип</title>
           <use xlink:href="/img/library.svg#logo-header"></use>
         </svg>
       </a>
-      <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
+      <a class="header__phone" href="tel:+78005555555">
+        <svg class="header__phone-image" width="152" height="20">
+        <title>+7-800-555-55-55</title>
+        <use xlink:href="/img/library.svg#phone"></use>
+      </svg></a>
     </div>
     <div class="header__wrapper">
+      <div class="header__info">
       <h2 class="header__title-info">омск</h2>
       <h1 class="header__title-main">Фитнес центр</h1>
       <ul class="header__list">
@@ -37,18 +42,15 @@
         <li class="item">Кардио-зона</li>
       </ul>
       <a class="header__button">Купить абонемент</a>
-
+    </div>
       <picture class="header__image">
         <source type="image/webp" media="(max-width: 1024px)"
           srcset="img/rectangle@x1.webp 1x, img/rectangle@x2.webp 2x">
         <source type="image/webp" media="(max-width: 768px)"
           srcset="img/rectangle--tablet@x1.webp 1x, img/rectangle--tablet@x2.webp 2x">
-        <source type="image/webp" media="(max-width: 320px)"
-          srcset="img/rectangle--mobile@x1.webp 1x, img/rectangle--mobile@x2.webp 2x">
 
-        <source media="(max-width: 320px)" srcset="img/rectangle--mobile@x1.jpg 1x, img/rectangle--mobile@x2.jpg 2x">
         <source media="(max-width: 768px)" srcset="img/rectangle--tablet@x1.jpg 1x, img/rectangle--tablet@x1.jpg 2x">
-        <img src="img/rectangle@x1.jpg" width="500" height="556" alt="Фото тренера" srcset="img/rectangle@x2.jpg 2x">
+        <img class="header__img" src="img/rectangle@x1.jpg" alt="Фото тренера" srcset="img/rectangle@x2.jpg 2x">
       </picture>
 
       <ul class="header__social header-social">
