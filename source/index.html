@@ -28,21 +28,21 @@
       </a>
       <a class="header__phone" href="tel:+78005555555">
         <svg class="header__phone-image" width="152" height="20">
-        <title>+7-800-555-55-55</title>
-        <use xlink:href="/img/library.svg#phone"></use>
-      </svg></a>
+          <title>+7-800-555-55-55</title>
+          <use xlink:href="/img/library.svg#phone"></use>
+        </svg></a>
     </div>
     <div class="header__wrapper">
       <div class="header__info">
-      <h2 class="header__title-info">омск</h2>
-      <h1 class="header__title-main">Фитнес центр</h1>
-      <ul class="header__list">
-        <li class="item">Тренажёрный зал</li>
-        <li class="item">Групповые занятия</li>
-        <li class="item">Кардио-зона</li>
-      </ul>
-      <a class="header__button">Купить абонемент</a>
-    </div>
+        <h2 class="header__title-info">омск</h2>
+        <h1 class="header__title-main">Фитнес центр</h1>
+        <ul class="header__list">
+          <li class="item">Тренажёрный зал</li>
+          <li class="item">Групповые занятия</li>
+          <li class="item">Кардио-зона</li>
+        </ul>
+        <a class="header__button">Купить абонемент</a>
+      </div>
       <picture class="header__image">
         <source type="image/webp" media="(max-width: 1024px)"
           srcset="img/rectangle@x1.webp 1x, img/rectangle@x2.webp 2x">
@@ -72,6 +72,7 @@
           здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов. В зале
           расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть несколько
           оборудованных залов для различных видов групповых занятий.</p>
+
         <picture class="about__video-preview">
           <source type="image/webp" media="(max-width: 1024px)"
             srcset="img/video--desktop@x1.webp 1x, img/video--desktop@x2.webp 2x">
@@ -82,8 +83,7 @@
 
           <source media="(max-width: 320px)" srcset="img/video--mobile@x1.jpg 1x, img/video--mobile@x2.jpg 2x">
           <source media="(max-width: 768px)" srcset="img/video--tablet@x1.jpg 1x, img/video--tablet@x1.jpg 2x">
-          <img src="img/video--desktop@x1.jpg" width="364" height="228" alt="Превью видео"
-            srcset="img/video--desktop@x2.jpg 2x">
+          <img src="img/video--desktop@x1.jpg" alt="Превью видео" srcset="img/video--desktop@x2.jpg 2x">
         </picture>
       </section>
       <section class="main__subscription subscription">
@@ -102,16 +102,32 @@
               <title>5000</title>
               <use xlink:href="/img/library.svg#5000"></use>
             </svg>
+            <svg class="price-list__image-bill">
+              <title>Рубль</title>
+              <use xlink:href="/img/library.svg#rub"></use>
+            </svg>
+            <svg class="price-list__image-shadow">
+              <title>5000</title>
+              <use xlink:href="/img/library.svg#5000__shadow"></use>
+            </svg>
             <a class="price-list__button">купить абонемент</a>
           </li>
-          <li class="price-list__item">
+          <li class="price-list__item price-list__item--focus">
             <h3 class="price-list__title">Дневной</h3>
             <span class="price-list__discription">с 8:00 до 17:00</span>
-            <svg class="price-list__image" width="122" height="42">
+            <svg class="price-list__image">
               <title>1700</title>
               <use xlink:href="/img/library.svg#1700"></use>
             </svg>
-            <a class="price-list__button">купить абонемент</a>
+            <svg class="price-list__image-bill">
+              <title>Рубль</title>
+              <use xlink:href="/img/library.svg#rub"></use>
+            </svg>
+            <svg class="price-list__image-shadow">
+              <title>1700</title>
+              <use xlink:href="/img/library.svg#1700__shadow"></use>
+            </svg>
+            <a class="price-list__button price-list__button--active">купить абонемент</a>
           </li>
           <li class="price-list__item">
             <h3 class="price-list__title">Полный день</h3>
@@ -120,7 +136,15 @@
               <title>2700</title>
               <use xlink:href="/img/library.svg#2700"></use>
             </svg>
-            <a class="price-list__button">купить абонемент</a>
+            <svg class="price-list__image-bill">
+              <title>Рубль</title>
+              <use xlink:href="/img/library.svg#rub"></use>
+            </svg>
+            <svg class="price-list__image-shadow">
+              <title>2700</title>
+              <use xlink:href="/img/library.svg#2700__shadow"></use>
+            </svg>
+            <a class="price-list__button ">купить абонемент</a>
           </li>
         </ul>
       </section>
