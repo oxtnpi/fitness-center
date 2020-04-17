@@ -13,3 +13,23 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (max-width: $tablet-width) {
+  .main {
+    width: 768px;
+  }
+
+  .main__wrapper {
+    width: 720px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .main {
+    width: $mobile-width;
+  }
+
+  .main__wrapper {
+    width: 290px;
+  }
+}

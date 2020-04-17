@@ -96,11 +96,200 @@
 .about__video-preview::after {
   position: absolute;
   content: "";
-  top: 0;
-  left: 0;
+  top: 64px;
+  left: 135px;
   width: 100px;
   height: 100px;
-  background-image: url("../img/library.svg#video-play");
+  background-image: url("../img/button-round.png");
   background-repeat: no-repeat;
   z-index: 4;
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    width: 768px;
+  }
+
+  .about::after {
+    width: 678px;
+    height: 345px;
+    position: absolute;
+    content: "";
+    top: 225px;
+    left: 20px;
+    background-image: url("../img/place1--tablet@x1.jpg");
+    background-position: center;
+    z-index: 1;
+
+    @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
+      background-image: url("../img/place--tablet1@x2.jpg");
+      background-position: center;
+    }
+  }
+
+  .about__title {
+    width: 317px;
+    height: 32px;
+    margin: 0;
+    margin-left: 220px;
+    padding: 0;
+    font-size: 27px;
+    line-height: 42px;
+  }
+
+  .about__discription {
+    width: 279px;
+    height: 11px;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0;
+    margin-left: 220px;
+    margin-top: 25px;
+    padding: 0;
+  }
+
+  .about__text {
+    width: 510px;
+    height: 58px;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 105px;
+    margin-bottom: 270px;
+    padding: 0;
+  }
+
+  .about__text-hide {
+    display: none;
+  }
+
+  .about__video-preview {
+    position: absolute;
+    content: "";
+    width: 266px;
+    height: 167px;
+    top: 485px;
+    left: 227px;
+    z-index: 2;
+  }
+
+  .about__video-preview::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 266px;
+    height: 167px;
+    background: $light-blue-shadow;
+    z-index: 3;
+  }
+
+  .about__video-preview::after {
+    position: absolute;
+    content: "";
+    top: 48px;
+    left: 95px;
+    width: 73px;
+    height: 73px;
+    background-image: url("../img/button-round--mobile.png");
+    background-repeat: no-repeat;
+    z-index: 4;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about {
+    width: $mobile-width;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .about::after {
+    width: 320px;
+    height: 313px;
+    position: absolute;
+    content: "";
+    top: 330px;
+    left: -20px;
+    background-image: url("../img/place1--tablet@x1.jpg");
+    background-position: center;
+    z-index: 1;
+
+    @media (max-resolution: $retina-dpi), (max-resolution: $retina-dppx) {
+      background-image: url("../img/place--tablet1@x2.jpg");
+      background-position: center;
+    }
+  }
+
+  .about__title {
+    width: 211px;
+    height: 24px;
+    margin: 0;
+    margin-left: 0;
+    margin-top: 70px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .about__discription {
+    width: 279px;
+    height: 11px;
+    font-size: 16px;
+    line-height: 27px;
+    margin: 0;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 0;
+  }
+
+  .about__text {
+    width: 258px;
+    height: 130px;
+    align-items: center;
+    text-align: left;
+    margin: 0;
+    margin-top: 40px;
+    margin-left: 0;
+    margin-bottom: 270px;
+    padding: 0;
+  }
+
+  .about__text-hide {
+    display: none;
+  }
+
+  .about__video-preview {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 167px;
+    top: 685px;
+    left: -15px;
+    z-index: 2;
+  }
+
+  .about__video-preview::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 320px;
+    height: 167px;
+    background: $light-blue-shadow;
+    z-index: 3;
+  }
+
+  .about__video-preview::after {
+    position: absolute;
+    content: "";
+    top: 48px;
+    left: 125px;
+    width: 73px;
+    height: 73px;
+    background-image: url("../img/button-round--mobile.png");
+    background-repeat: no-repeat;
+    z-index: 4;
+  }
 }
