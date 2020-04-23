@@ -150,15 +150,15 @@
           <span class="contest__discription">Ежегодные соревнования по CrossFit</span>
           <div class="contest__box-container box-container">
             <div class="box-container__first-box">
-            <span class="contest__date-text">Дата</span>
-            <p class="contest__date"><span class="contest__date-day">7</span>Марта 2019</p>
+              <span class="contest__date-text">Дата</span>
+              <p class="contest__date"><span class="contest__date-day">7</span>Марта 2019</p>
+            </div>
+            <div class="box-container__second-box">
+              <span class="contest__time-text">Время</span>
+              <time class="contest__time" datetime="12:00">12:00</time>
+            </div>
           </div>
-          <div class="box-container__second-box">
-            <span class="contest__time-text">Время</span>
-            <time class="contest__time" datetime="12:00">12:00</time>
-          </div>
-        </div>
-        <a class="contest__button">заполнить заявку</a>
+          <a class="contest__button">заполнить заявку</a>
         </div>
 
 
@@ -175,6 +175,7 @@
 
       <section class="main__coaches coaches">
         <h2 class="coaches__title">Тренеры</h2>
+        <button class="coaches__button-last button"><span class="visually-hidden">Предыдущий</span></button>
         <ul class="coaches__list coaches-list">
           <li class="coaches__item coaches__item-first">
             <picture class="coaches__image">
@@ -202,7 +203,7 @@
 
               <source media="(max-width: 320px)" srcset="img/coach_3--mobile@x1.png 1x, img/coach_3--mobile@x2.png 2x">
               <source media="(max-width: 768px)" srcset="img/coach_3--tablet@x1.png 1x, img/coach_3--tablet@x1.png 2x">
-              <img src="img/coach_3@x1.png" width="260" height="294" alt="Фото тренера Александрf Пашкова" srcset="img/coach_3@x2.png 2x">
+              <img src="img/coach_3@x1.png" alt="Фото тренера Александрf Пашкова" srcset="img/coach_3@x2.png 2x">
             </picture>
             <span class="coaches__name">Александр Пашков</span>
             <div class="coaches__about">
@@ -226,76 +227,99 @@
             <div class="coaches__about"></div>
           </li>
         </ul>
+        <button class="coaches__button-next button"><span class="visually-hidden">Следущий</span></button>
       </section>
       <section class="main__advantages advantages">
         <h2 class="advantages__title">Наши преимущества</h2>
-        <ul class="advantages__list">
-          <li class="advantages__item">
-            <svg class="advantages__image" width="108" height="49">
-              <title>900</title>
-              <use xlink:href="/img/library.svg#900"></use>
-            </svg>
-            <span class="advantages__item-type">кв/м</span>
-            <h3 class="advantages__item-title">Площадь</h3>
-            <p class="advantages__item-description">Занимайтесь без очередей и толпучки</p>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__image" width="108" height="49">
-              <title>350</title>
-              <use xlink:href="/img/library.svg#350"></use>
-            </svg>
-            <span class="advantages__item-type">мест</span>
-            <h3 class="advantages__item-title">Комфорт</h3>
-            <p class="advantages__item-description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__image" width="113" height="49">
-              <title>100</title>
-              <use xlink:href="/img/library.svg#100"></use>
-            </svg>
-            <h3 class="advantages__item-title">Тренажеров</h3>
-            <p class="advantages__item-description">Современные тренажеры на все группы мышц</p>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__image" width="72" height="49">
-              <title>70</title>
-              <use xlink:href="/img/library.svg#70"></use>
-            </svg>
-            <span class="advantages__item-type">машин</span>
-            <h3 class="advantages__item-title">Собственная парковка</h3>
-            <p class="advantages__item-description">Вы всегда найдете место для своей машины на нашей парковке</p>
-          </li>
-          <li class="advantages__item">
-            <svg class="advantages__image" width="70" height="49">
-              <title>5</title>
-              <use xlink:href="/img/library.svg#5"></use>
-            </svg>
-            <span class="advantages__item-type">лет</span>
-            <h3 class="advantages__item-title">Тренерский опыт</h3>
-            <p class="advantages__item-description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
-          </li>
-        </ul>
+        <div class="advantages__list">
+          <div class="advantages__list-container list-container__first-container">
+            <div class="advantages__item item__area">
+              <div class="advantages__item-box item-box__first">
+                <img class="advantages__image" src="./img/900.svg" alt="900">
+                <span class="advantages__item-type">кв/м</span>
+              </div>
+              <div class="advantages__item-box item-box__second">
+                <h3 class="advantages__item-title">Площадь</h3>
+                <p class="advantages__item-description item-description__area">Занимайтесь без очередей и толпучки</p>
+              </div>
+            </div>
+            <div class="advantages__item">
+              <div class="advantages__item-box item-box__first">
+                <img class="advantages__image" src="./img/350.svg" alt="350">
+                <span class="advantages__item-type">мест</span>
+              </div>
+              <div class="advantages__item-box item-box__second">
+                <h3 class="advantages__item-title">Комфорт</h3>
+                <p class="advantages__item-description">Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+              </div>
+            </div>
+          </div>
+          <div class="advantages__list-container list-container__second-container">
+            <div class="advantages__item item__simulators">
+              <img class="advantages__image" src="./img/100.svg" alt="100">
+              <h3 class="advantages__item-title">Тренажеров</h3>
+              <p class="advantages__item-description">Современные тренажеры на все группы мышц</p>
+            </div>
+          </div>
+          <div class="advantages__list-container list-container__third-container">
+            <div class="advantages__item item__parking">
+              <div class="advantages__item-box item-box__first">
+                <img class="advantages__image" src="./img/70.svg" alt="70">
+                <span class="advantages__item-type">машин</span>
+              </div>
+              <div class="advantages__item-box item-box__second">
+                <h3 class="advantages__item-title">Собственная парковка</h3>
+                <p class="advantages__item-description">Вы всегда найдете место для своей машины на нашей парковке</p>
+              </div>
+            </div>
+            <div class="advantages__item item__experience">
+              <div class="advantages__item-box item-box__first">
+                <img class="advantages__image" src="./img/5.svg" alt="5+">
+                <span class="advantages__item-type">лет</span>
+              </div>
+              <div class="advantages__item-box item-box__second">
+                <h3 class="advantages__item-title">Тренерский опыт</h3>
+                <p class="advantages__item-description">Добивайтесь своих целей быстрее с профессиональным тренером</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="main__sale sale">
         <h2 class="sale__title">Акции</h2>
-        <div class="sale__box-year box-year">
-          <span class="box-year_date">Год</span>
-          <svg class="box-year__image" width="142" height="47">
-            <title>4999</title>
-            <use xlink:href="/img/library.svg#4999"></use>
-          </svg>
-          <span class="box-year__discription">Безлимитный абонемент в тренажерный зал</span>
-          <a class="box-year__link">подробнее</a>
-        </div>
-        <div class="sale__box-team box-team">
-          <span class="box-team_date">Месяц бесплатно</span>
-          <span class="box-team__discription">Приведи друга, получи абонемент в подарок</span>
-          <a class="box-team__link">подробнее</a>
-        </div>
-        <div class="sale__box-month box-month">
-          <span class="box-month_date">Скидка 20%</span>
-          <span class="box-month__discription">Корпоративный фитнес с командой</span>
-          <a class="box-month__link">подробнее</a>
+        <div class="sale__wrapper">
+          <div class="sale__container">
+            <div class="sale__box-year box-year">
+              <span class="box-year_date">Год</span>
+              <svg class="box-year__image" width="142" height="47">
+                <title>4999</title>
+                <use xlink:href="/img/library.svg#4999"></use>
+              </svg>
+              <span class="box-year__discription">Безлимитный абонемент в тренажерный зал</span>
+              <a class="box-year__link" href="#">подробнее</a>
+            </div>
+            <picture class="sale__image">
+              <source type="image/webp" media="(max-width: 1024px)" srcset="img/model_1@x1.webp 1x, img/model_1@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 768px)" srcset="img/model_1--tablet@x1.webp 1x, img/model_1--tablet@x2.webp 2x">
+              <source type="image/webp" media="(max-width: 320px)" srcset="img/model_1--mobile@x1.webp 1x, img/model_1--mobile@x2.webp 2x">
+
+              <source media="(max-width: 320px)" srcset="img/model_1--mobile@x1.jpg 1x, img/model_1--mobile@x2.jpg 2x">
+              <source media="(max-width: 768px)" srcset="img/model_1--tablet@x1.jpg 1x, img/model_1--tablet@x1.jpg 2x">
+              <img src="img/model_1@x1.jpg" alt="Фото спорсмена" srcset="img/model_1@x2.jpg 2x">
+            </picture>
+          </div>
+          <div class="sale__box-team box-team">
+            <div class="sale__box box-team__team">
+              <span class="box_date">Месяц бесплатно</span>
+              <span class="box__discription">Приведи друга, получи абонемент в подарок</span>
+              <a class="box__link">подробнее</a>
+            </div>
+            <div class="sale__box box-month">
+              <span class="box_date">Скидка 20%</span>
+              <span class="box__discription">Корпоративный фитнес с командой</span>
+              <a class="box__link">подробнее</a>
+            </div>
+          </div>
         </div>
       </section>
       <section class="main__feedback feedback">
@@ -310,50 +334,59 @@
             <source media="(max-width: 768px)" srcset="img/feedback--tablet@x1.png 1x, img/rfeedback--tablet@x1.png 2x">
             <img src="img/feedback--desktop@x1.png" width="80" height="80" alt="Фото Анны Орловой" srcset="img/feedback--desktop@x2.png 2x">
           </picture>
-          <span class="feedback__name">Анна Орлова</span>
-          <p class="feedback__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры
-            обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей» </p>
+          <div class="feedback__container">
+            <span class="feedback__name">Анна Орлова</span>
+            <p class="feedback__text">«Хожу в SuperClub уже больше года. Нравится, что в клубе всегда чисто, тренажеры
+              обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей» </p>
+          </div>
         </div>
+        <button class="feedback__button button__last"><span class="visually-hidden">Предыдущий</span></button>
+        <button class="feedback__button button__next"><span class="visually-hidden">Следущий</span></button>
       </section>
-      <div class="main__container">
-        <section class="main__free-lesson free-lesson">
-          <h2 class="free-lesson__title">БЕСПЛАТНОЕ занятие</h2>
-          <form class="free-lesson__form">
-            <input class="free-lesson__name" placeholder="Имя">
-            <input class="free-lesson__phone" placeholder="Телефон">
-            <button class="free-lesson__button">отправить</button>
-          </form>
-        </section>
-        <section class="main__contacts contacts">
-          <h2 class="contacts__title">Контакты</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <h3 class="contacts__item-title">Адрес:</h3>
-              <address class="contacts__item-info">г. Омск, ул. 60 лет Октября, 7 </address>
-            </li>
-            <li class="contacts__item">
-              <h3 class="contacts__item-title">График работы:</h3>
-              <span class="contacts__item-info">Пн-Вс: с 8:00 до 22:00 </span>
-            </li>
-            <li class="contacts__item">
-              <h3 class="contacts__item-title">Телефон:</h3>
-              <a class="contacts__item-info" href="tel:+78005555555"> 8-800-555-55-55 </a>
-            </li>
-            <li class="contacts__item">
-              <h3 class="contacts__item-title">Email:</h3>
-              <a class="contacts__item-info" href="mailto:omsk@supergym.ru"> omsk@supergym.ru </a>
-            </li>
-          </ul>
-        </section>
-      </div>
     </div>
+    <div class="main__container">
+      <section class="main__free-lesson free-lesson">
+        <h2 class="free-lesson__title">БЕСПЛАТНОЕ занятие</h2>
+        <form class="free-lesson__form">
+          <input class="free-lesson__input free-lesson__input-name" placeholder="Имя">
+          <input class="free-lesson__input free-lesson__input-phone" placeholder="Телефон">
+          <button class="free-lesson__button">отправить</button>
+        </form>
+      </section>
+      <section class="main__contacts contacts">
+        <h2 class="contacts__title">Контакты</h2>
+        <div class="contacts__list">
+          <div class="contasts__box">
+          <div class="contacts__item">
+            <h3 class="contacts__item-title">Адрес:</h3>
+            <address class="contacts__item-info">г. Омск, ул. 60 лет Октября, 7 </address>
+          </div>
+          <div class="contacts__item">
+            <h3 class="contacts__item-title">График работы:</h3>
+            <span class="contacts__item-info">Пн-Вс: с 8:00 до 22:00 </span>
+          </div>
+        </div>
+        <div class="contasts__box">
+          <div class="contacts__item">
+            <h3 class="contacts__item-title">Телефон:</h3>
+            <a class="contacts__item-info" href="tel:+78005555555"> 8-800-555-55-55 </a>
+          </div>
+          <div class="contacts__item">
+            <h3 class="contacts__item-title">Email:</h3>
+            <a class="contacts__item-info" href="mailto:omsk@supergym.ru"> omsk@supergym.ru </a>
+          </div>
+        </div>
+      </div>
+      </section>
+    </div>
+
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
       <a class="footer__logo logo">
         <svg class="footer__image" width="89" height="20">
           <title>Логотип</title>
-          <use xlink:href="/img/library.svg#logo-header"></use>
+          <use xlink:href="./img/library.svg#logo-header"></use>
         </svg>
       </a>
       <nav class="footer__nav">
@@ -388,26 +421,26 @@
 
       <ul class="footer__social footer-social">
         <li class="footer-social__item">
-          <a class="footer-social__link">
+          <a class="footer-social__link" href="#">
             <svg class="footer-social__image" width="24" height="13">
               <title>Вконтакте</title>
-              <use xlink:href="/img/library.svg#vk"></use>
+              <use xlink:href="./img/library.svg#icon-vk"></use>
             </svg>
           </a>
         </li>
         <li class="footer-social__item">
-          <a class="footer-social__link">
+          <a class="footer-social__link" href="#">
             <svg class="footer-social__image" width="24" height="24">
               <title>Insagram</title>
-              <use xlink:href="/img/library.svg#inst"></use>
+              <use xlink:href="./img/library.svg#icon-insta"></use>
             </svg>
           </a>
         </li>
         <li class="footer-social__item">
-          <a class="footer-social__link">
+          <a class="footer-social__link" href="#">
             <svg class="footer-social__image" width="12" height="24">
               <title>Facebook</title>
-              <use xlink:href="/img/library.svg#fb"></use>
+              <use xlink:href="./img/library.svg#icon-fb"></use>
             </svg>
           </a>
         </li>

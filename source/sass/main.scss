@@ -1,5 +1,5 @@
 .main {
-  width: 1366px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
   display: flex;
@@ -12,6 +12,14 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+.main__container {
+  width: 1350px;
+  height: 337px;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 @media (max-width: $tablet-width) {

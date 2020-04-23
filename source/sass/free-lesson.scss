@@ -1,0 +1,92 @@
+.free-lesson {
+  width: 683px;
+  height: 337px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background: #102654;
+}
+
+.free-lesson__title {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 64px;
+  letter-spacing: 0.03px;
+  text-transform: uppercase;
+  color: $white;
+  margin: 0;
+  margin-top: 60px;
+  margin-left: 100px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.free-lesson__form {
+  width: 683px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: 100px;
+  padding: 0;
+}
+
+.free-lesson__input {
+  width: 190px;
+  height: 30px;
+  border: none;
+  background-color: #102654;
+  border-bottom: 1px solid $white;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.free-lesson__input::-webkit-input-placeholder {
+  color:$white;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.free-lesson__input::-moz-placeholder {
+  color:$white;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.free-lesson__input:-moz-placeholder {
+  color:$white;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.free-lesson__input:-ms-input-placeholder {
+  color:$white;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.free-lesson__input-name {
+  margin-right: 30px;
+}
+
+.free-lesson__button {
+  width: 410px;
+  height: 52px;
+  border: 3px solid $white;
+  background-color: #102654;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05px;
+  text-transform: uppercase;
+  color: $white;
+}

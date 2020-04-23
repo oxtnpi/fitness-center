@@ -1,8 +1,10 @@
 .subscription {
-  width: 1160px;
+  width: 100%;
   margin: 0  auto;
   padding: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: $light-grey;
 }
 
@@ -23,14 +25,19 @@
 }
 
 .subscription__title {
-  font-size: 42px;
+  width: 225px;
+  height: 37px;
+  display: block;
+  font-size: 30px;
   line-height: 49px;
   font-family: "Bebas Neue", "Arial", sans-serif;
   color: $dark-blue;
   text-transform: uppercase;
   margin: 0;
-  margin-left: 450px;
+  align-self: center;
   margin-top: 120px;
+
+  margin-bottom: 45px;
   padding: 0;
 }
 
@@ -47,7 +54,6 @@
   color: $dark-blue;
   margin: 0;
   margin-left: 407px;
-  margin-top: 35px;
   padding: 0;
 }
 
